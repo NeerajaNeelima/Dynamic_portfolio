@@ -83,70 +83,70 @@ const { testimonials } = userData.user;
       </p>
     </section>
 
-  <section class="service">
+  <section className="service">
 
-      <h3 class="h3 service-title">What i'm doing</h3>
+      <h3 className="h3 service-title">What i'm doing</h3>
 
-      <ul class="service-list">
+      <ul className="service-list">
 
-        <li class="service-item">
+        <li className="service-item">
 
-          <div class="service-icon-box">
+          <div className="service-icon-box">
             <img src={IconDesign} alt="design icon" style={{width:"40"}} />
           </div>
 
-          <div class="service-content-box">
-            <h4 class="h4 service-item-title">Web design</h4>
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Web design</h4>
 
-            <p class="service-item-text">
+            <p className="service-item-text">
               The most modern and high-quality design made at a professional level.
             </p>
           </div>
 
         </li>
 
-        <li class="service-item">
+        <li className="service-item">
 
-          <div class="service-icon-box">
+          <div className="service-icon-box">
             <img src={IconDev} alt="Web development icon" style={{ width:"40"}}/>
           </div>
 
-          <div class="service-content-box">
-            <h4 class="h4 service-item-title">Web development</h4>
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Web development</h4>
 
-            <p class="service-item-text">
+            <p className="service-item-text">
               High-quality development of sites at the professional level.
             </p>
           </div>
 
         </li>
 
-        <li class="service-item">
+        <li className="service-item">
 
-          <div class="service-icon-box">
+          <div className="service-icon-box">
             <img src={IconApp} alt="mobile app icon" style={{width:"40"}} />
           </div>
 
-          <div class="service-content-box">
-            <h4 class="h4 service-item-title">Mobile apps</h4>
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Mobile apps</h4>
 
-            <p class="service-item-text">
+            <p className="service-item-text">
               Professional development of applications for iOS and Android.
             </p>
           </div>
 
         </li>
 
-        <li class="service-item">
+        <li className="service-item">
 
-          <div class="service-icon-box">
+          <div className="service-icon-box">
             <img src={IconPhoto} alt="camera icon" style={{ width:"40"}}/>
           </div>
 
-          <div class="service-content-box">
-            <h4 class="h4 service-item-title">Photography</h4>
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Photography</h4>
 
-            <p class="service-item-text">
+            <p className="service-item-text">
               I make high-quality photos of any category at a professional level.
             </p>
           </div>
@@ -160,7 +160,7 @@ const { testimonials } = userData.user;
 
    
 
-    <section class="testimonials">
+    <section className="testimonials">
 
     <h3 className="h3 testimonials-title">Testimonials</h3>
         <ul className="testimonials-list has-scrollbar">
@@ -187,17 +187,17 @@ const { testimonials } = userData.user;
 
    
 
-    <div class="modal-container" data-modal-container>
+    <div className="modal-container" data-modal-container>
 
-      <div class="overlay" data-overlay></div>
+      <div className="overlay" data-overlay></div>
 
-      <section class="testimonials-modal">
+      <section className="testimonials-modal">
 
-        <button class="modal-close-btn" data-modal-close-btn>
+        <button className="modal-close-btn" data-modal-close-btn>
         <AiOutlineClose />
         </button>
 
-        <div class="modal-img-wrapper">
+        <div className="modal-img-wrapper">
           <figure class="modal-avatar-box">
             <img src={Avatar4} alt="Daniel lewis" style={{width:"80"}}  data-modal-img/>
           </figure>
@@ -205,9 +205,9 @@ const { testimonials } = userData.user;
           <img src={Quot} alt="quote icon"/>
         </div>
 
-        <div class="modal-content">
+        <div className="modal-content">
 
-          <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+          <h4 className="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
           <time datetime="2021-06-14">14 June, 2021</time>
 
@@ -230,43 +230,43 @@ const { testimonials } = userData.user;
 
     
 
-    <section class="clients">
+    <section className="clients">
 
-      <h3 class="h3 clients-title">Clients</h3>
+      <h3 className="h3 clients-title">Clients</h3>
 
-      <ul class="clients-list has-scrollbar">
+      <ul className="clients-list has-scrollbar">
 
-        <li class="clients-item">
+        <li className="clients-item">
           <a href="#">
             <img src={Log1} alt="client logo" />
           </a>
         </li>
 
-        <li class="clients-item">
+        <li className="clients-item">
           <a href="#">
             <img src={Log2} alt="client logo"/>
           </a>
         </li>
 
-        <li class="clients-item">
+        <li className="clients-item">
           <a href="#">
             <img src={Log3} alt="client logo"/>
           </a>
         </li>
 
-        <li class="clients-item">
+        <li className="clients-item">
           <a href="#">
             <img src={Log4} alt="client logo"/>
           </a>
         </li>
 
-        <li class="clients-item">
+        <li className="clients-item">
           <a href="#">
             <img src={Log5} alt="client logo"/>
           </a>
         </li>
 
-        <li class="clients-item">
+        <li className="clients-item">
           <a href="#">
             <img src={Log6} alt="client logo"/>
           </a>
@@ -274,8 +274,8 @@ const { testimonials } = userData.user;
 
       </ul>
 
-          </section>
-          <h1 style={{color:'white'}}>About</h1>
+      </section>
+          
 
   </article>
   )

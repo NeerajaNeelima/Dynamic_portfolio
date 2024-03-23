@@ -29,19 +29,19 @@ const Sidebar = ({userData}) => {
   return (
     <aside className={`sidebar ${isSidebarOpen ? 'active' : ''}`} data-sidebar>
 
-      <div class="sidebar-info">
+      <div className="sidebar-info">
 
-        <figure class="avatar-box">
+        <figure className="avatar-box">
           <img src={userData.user.about.avatar.url} alt="Richard hanrick" style={{width:"80"}} />
         </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">{userData.user.about.name}</h1>
+        <div className="info-content">
+          <h1 className="name" title="Richard hanrick">{userData.user.about.name}</h1>
 
-          <p class="title">{userData.user.about.title}</p>
+          <p className="title">{userData.user.about.title}</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn onClick={toggleSidebar}>
+        <button className="info_more-btn" data-sidebar-btn onClick={toggleSidebar}>
           <span>Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
@@ -49,62 +49,62 @@ const Sidebar = ({userData}) => {
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div className="sidebar-info_more">
 
-        <div class="separator"></div>
+        <div className="separator"></div>
 
-        <ul class="contacts-list">
+        <ul className="contacts-list">
 
-          <li class="contact-item">
+          <li className="contact-item">
 
-            <div class="icon-box">
+            <div className="icon-box">
             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffdb70" }} />
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+            <div className="contact-info">
+              <p className="contact-title">Email</p>
 
               <a href="mailto:richard@example.com" class="contact-link">{userData.user.email}</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <li className="contact-item">
 
-            <div class="icon-box">
+            <div className="icon-box">
             <FontAwesomeIcon icon={faMobile} />
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+            <div className="contact-info">
+              <p className="contact-title">Phone</p>
 
               <a href="tel:+12133522795" class="contact-link">{userData.user.about.phoneNumber}</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <li className="contact-item">
 
-            <div class="icon-box">
+            <div className="icon-box">
             <FontAwesomeIcon icon={faCalendarDay} />
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+            <div className="contact-info">
+              <p className="contact-title">Birthday</p>
 
               <time datetime="1982-06-23">June 23, 1982</time>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <li className="contact-item">
 
-            <div class="icon-box">
+            <div className="icon-box">
             <FontAwesomeIcon icon={faLocationDot} />
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+            <div className="contact-info">
+              <p className="contact-title">Location</p>
 
               <address>{userData.user.about.address}</address>
             </div>
@@ -113,9 +113,9 @@ const Sidebar = ({userData}) => {
 
         </ul>
 
-        <div class="separator"></div>
+        <div className="separator"></div>
 
-        <ul class="social-list">
+        <ul className="social-list">
 
         {social_handles.map((handle, index) => {
         const IconComponent = iconMap[handle.platform]; // Get the corresponding icon component

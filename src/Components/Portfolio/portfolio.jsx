@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import { AiOutlineEye } from "react-icons/ai";
 import { BsChevronDown } from "react-icons/bs";
 
-
-
-
 const Portfolio = ({userData}) => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectListVisible, setSelectListVisible] = useState(false);
@@ -40,12 +37,11 @@ const Portfolio = ({userData}) => {
   };
 
   const toggleSelectList = () => {
-    console.log("clicked");
+    console.log("clicked")
     setSelectListVisible(!selectListVisible);
   };
-
+  console.log(selectListVisible);
   
-
   return (
     <article className='Portfolio active' data-page="portfolio">
       <header>
@@ -114,28 +110,36 @@ const Portfolio = ({userData}) => {
         </ul>
 
         <div className="filter-select-box">
-          <button className="filter-select" onClick={toggleSelectList}>
-            <div className="select-value" data-selecct-value>{selectValue}</div>
-            <div className="select-icon">
-              <BsChevronDown />
-            </div>
-          </button>
-          <ul className={`select-list ${selectListVisible ? 'active' : ''}`}>
-            <li className="select-item">
-              <button onClick={() => handleSelectItemClick('All')}>All</button>
-            </li>
-            <li className="select-item">
-              <button onClick={() => handleSelectItemClick('Web design')}>Web design</button>
-            </li>
-            <li className="select-item">
-              <button onClick={() => handleSelectItemClick('Applications')}>Applications</button>
-            </li>
-            <li className="select-item">
-              <button onClick={() => handleSelectItemClick('Web development')}>Web development</button>
-            </li>
-          </ul>
+      <button className={`filter-select ${selectListVisible ? 'active' : ''}`} data-select onClick={toggleSelectList}>
+        <div className="select-value" data-selecct-value>{selectValue}</div>
+        <div className="select-icon">
+          <BsChevronDown />
         </div>
-
+      </button>
+      <ul className={`select-list ${selectListVisible ? 'active' : ''}`}>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('All')}>All</button>
+        </li>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('App Development')}>App Development</button>
+        </li>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('Web & App ')}>Web & App </button>
+        </li>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('UI/UX Solutions')}>UI/UX Solutions</button>
+        </li>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('Global Marketing')}>Global Marketing</button>
+        </li>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('Brand Consultant')}>Brand Consultant</button>
+        </li>
+        <li className="select-item">
+          <button onClick={() => handleSelectItemClick('Wordpress Development')}>Wordpress Development</button>
+        </li>
+      </ul>
+    </div>
         <ul className="project-list">
           {filteredProjects.map((project, index) => (
             <li
